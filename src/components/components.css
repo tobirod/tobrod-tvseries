@@ -1,0 +1,220 @@
+/* SEARCHBAR */
+header {
+    display: flex;
+    background-color: indigo;
+    padding: 10px;
+    border-bottom: 5px solid goldenrod;
+    color: white;
+}
+
+.searchbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.searchbar-title-logo {
+    position: absolute;
+    align-self: center;
+    max-height: 45px;
+}
+
+.searchbar-search-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+    .searchbar-search-form {
+        display: flex;
+        background: white;
+        margin-top: 15px;
+        width: 30vw;
+        border-radius: 5px;
+    }
+
+        .searchbar-search-input {
+            width: 85%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            border-radius: 5px 0 0 5px;
+            background: white;
+            padding: 5px 5px 5px 10px;
+            font-family: Bungee;
+            outline: none;
+        }
+
+        .searchbar-search-button {
+            width: 15%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            border-radius: 0 5px 5px 0;
+            background: goldenrod;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+            .searchbar-search-icon {
+                height: 1.5vh;
+            }
+
+    .searchbar-search-options {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .searchbar-endpoint-container {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+
+            .searchbar-endpoint-radio {
+                height: 1vh;
+                cursor: pointer;
+            }
+
+            .searchbar-endpoint-label {
+                font-size: 0.75em;
+                margin-left: -4px;
+                user-select: none;
+                cursor: pointer;
+            }
+
+        .searchbar-advanced-header {
+            user-select: none;
+        }
+
+            .searchbar-advanced-header-text {
+                font-size: 10px;
+                cursor: pointer;
+            }
+
+            .searchbar-advanced-header-text:hover {
+                text-decoration: underline;
+            }
+
+.searchbar-advanced-container {
+    margin-top: 15px;
+}
+
+    .searchbar-advanced-content {
+        display: flex;
+    }
+
+#chevron-down {
+    display: inline-block;
+    align-self: center;
+    margin-left: 5px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 2.5px;
+    height: 2.5px;
+    transform: rotate(-315deg);
+}
+
+#chevron-right {
+    display: inline-block;
+    align-self: center;
+    margin-left: 5px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 2.5px;
+    height: 2.5px;
+    transform: rotate(-45deg);
+}
+
+/* LIST & DETAILEDVIEW */
+main {
+    display: flex;
+    height: 100%;
+    margin: 5px 0px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+/* DEFAULTVIEW */
+.defaultview-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.defaultview-scroll-container {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+}
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+.defaultview-item-container {
+    margin: 3px;
+}
+
+    .defaultview-item-image {
+        height: 35vh;
+    }
+
+    .defaultview-item-genres, .defaultview-item-rating {
+        font-size: 0.75em;
+        margin: 0px;
+    }
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* RESULT ITEM */
+.result-container {
+    display: flex;
+    margin: 1px;
+    justify-self: center;
+    padding: 5px 10px 5px 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.result-image-container {
+    max-height: 15vh;
+    min-width: 11vh;
+    margin-right: 10px;
+}
+
+.result-image {
+    height: 100%;
+    user-select: none;
+}
+
+.result-name, .result-title, .no-results {
+    font-size: 1.5em;
+}
+
+.result-genre, .result-language, .result-summary, .result-birthday, .result-country {
+    font-size: 0.75empx;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: indigo;
+    padding: 10px;
+    border-top: 5px solid goldenrod;
+    color: white;
+}
+
+    .footer-text {
+        font-size: 0.75em;
+        color: white;
+        opacity: 0.5;
+    }
